@@ -1,0 +1,567 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace LetterCount
+{
+    public partial class Form1 : Form
+    {
+        int counta = 1;
+        int countb = 1;
+        int countc = 1;
+        int countd = 1;
+        int counte = 1;
+        int countf = 1;
+        int countg = 1;
+        int counth = 1;
+        int counti = 1;
+        int countj = 1;
+        int countk = 1;
+        int countl = 1;
+        int countm = 1;
+        int countn = 1;
+        int counto = 1;
+        int countp = 1;
+        int countq = 1;
+        int countr = 1;
+        int counts = 1;
+        int countt = 1;
+        int countu = 1;
+        int countv = 1;
+        int countw = 1;
+        int countx = 1;
+        int county = 1;
+        int countz = 1;
+
+
+
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_choosefile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                String filePath = openFileDialog.FileName;
+                textBox1.Text = File.ReadAllText(filePath);
+            }
+
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void btn_createWordList_Click(object sender, EventArgs e)
+        {
+            
+     
+        }
+
+        private void btn_SortWords_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void btn_Count_Click(object sender, EventArgs e)
+        {
+            {
+                char charToCounta = 'a';
+                char charToCountA = 'A';
+                foreach (char a in textBox1.Text)
+                {
+                    if (a == charToCounta)
+                    {
+                        textBox2.Text = (counta++).ToString();
+
+                    }
+                    if (a == charToCountA)
+                    {
+                        textBox2.Text = (counta++).ToString();
+
+                    }
+                }
+            }
+
+
+            {
+                char charToCountb = 'b';
+                char charToCountB = 'B';
+                foreach (char b in textBox1.Text)
+                {
+                    if (b == charToCountb)
+                    {
+                        textBox3.Text = (countb++).ToString();
+
+                    }
+                    if (b == charToCountB)
+                    {
+                        textBox3.Text = (countb++).ToString();
+
+                    }
+                }
+            }
+            {
+                char charToCountc = 'c';
+                char charToCountC = 'C';
+                foreach (char c in textBox1.Text)
+                {
+                    if (c == charToCountc)
+                    {
+                        textBox4.Text = (countc++).ToString();
+                    }
+                    if (c == charToCountC)
+                    {
+                        textBox4.Text = (countc++).ToString();
+
+                    }
+                }
+            }
+            {
+
+                char charToCountd = 'd';
+                char charToCountD = 'D';
+                foreach (char d in textBox1.Text)
+                {
+                    if (d == charToCountd)
+                    {
+                        textBox5.Text = (countd++).ToString();
+                    }
+                    if (d == charToCountD)
+                    {
+                        textBox5.Text = (countd++).ToString();
+
+                    }
+                }
+            }
+            {
+                char charToCounte = 'e';
+                char charToCountE = 'E';
+                foreach (char eok in textBox1.Text)
+                {
+                    if (eok == charToCounte)
+                    {
+                        textBox6.Text = (counte++).ToString();
+                    }
+                    if (eok == charToCountE)
+                    {
+                        textBox6.Text = (counte++).ToString();
+
+                    }
+                }
+            }
+
+            char charToCountf = 'f';
+            char charToCountF = 'F';
+            foreach (char f in textBox1.Text)
+            {
+                if (f == charToCountf)
+                {
+                    textBox7.Text = (countf++).ToString();
+                }
+                if (f == charToCountF)
+                {
+                    textBox7.Text = (countf++).ToString();
+
+                }
+            }
+
+            char charToCountg = 'g';
+            char charToCountG = 'G';
+            foreach (char g in textBox1.Text)
+            {
+                if (g == charToCountg)
+                {
+                    textBox8.Text = (countg++).ToString();
+                }
+                if (g == charToCountG)
+                {
+                    textBox8.Text = (countg++).ToString();
+
+                }
+            }
+
+            char charToCounth = 'h';
+            char charToCountH = 'H';
+            foreach (char h in textBox1.Text)
+            {
+                if (h == charToCounth)
+                {
+                    textBox9.Text = (counth++).ToString();
+                }
+                if (h == charToCountH)
+                {
+                    textBox9.Text = (counth++).ToString();
+
+                }
+            }
+
+            char charToCounti = 'i';
+            char charToCountI = 'I';
+            foreach (char i in textBox1.Text)
+            {
+                if (i == charToCounti)
+                {
+                    textBox10.Text = (counti++).ToString();
+                }
+                if (i == charToCountI)
+                {
+                    textBox10.Text = (counti++).ToString();
+
+                }
+            }
+
+            char charToCountj = 'j';
+            char charToCountJ = 'J';
+            foreach (char j in textBox1.Text)
+            {
+                if (j == charToCountj)
+                {
+                    textBox11.Text = (countj++).ToString();
+                }
+                if (j == charToCountJ)
+                {
+                    textBox11.Text = (countj++).ToString();
+
+                }
+            }
+
+            char charToCountk = 'k';
+            char charToCountK = 'K';
+            foreach (char k in textBox1.Text)
+            {
+                if (k == charToCountk)
+                {
+                    textBox12.Text = (countk++).ToString();
+                }
+                if (k == charToCountK)
+                {
+                    textBox12.Text = (countk++).ToString();
+
+                }
+            }
+
+            char charToCountl = 'l';
+            char charToCountL = 'L';
+            foreach (char l in textBox1.Text)
+            {
+                if (l == charToCountl)
+                {
+                    textBox13.Text = (countl++).ToString();
+                }
+                if (l == charToCountL)
+                {
+                    textBox13.Text = (countl++).ToString();
+
+                }
+            }
+
+            char charToCountm = 'm';
+            char charToCountM = 'M';
+            foreach (char m in textBox1.Text)
+            {
+                if (m == charToCountm)
+                {
+                    textBox14.Text = (countm++).ToString();
+                }
+                if (m == charToCountM)
+                {
+                    textBox14.Text = (countm++).ToString();
+
+                }
+            }
+
+            char charToCountn = 'n';
+            char charToCountN = 'N';
+            foreach (char n in textBox1.Text)
+            {
+                if (n == charToCountn)
+                {
+                    textBox15.Text = (countn++).ToString();
+                }
+                if (n == charToCountN)
+                {
+                    textBox15.Text = (countn++).ToString();
+
+                }
+            }
+
+            char charToCounto = 'o';
+            char charToCountO = 'O';
+            foreach (char o in textBox1.Text)
+            {
+                if (o == charToCounto)
+                {
+                    textBox16.Text = (counto++).ToString();
+                }
+                if (o == charToCountO)
+                {
+                    textBox16.Text = (counto++).ToString();
+
+                }
+            }
+
+            char charToCountp = 'p';
+            char charToCountP = 'P';
+            foreach (char p in textBox1.Text)
+            {
+                if (p == charToCountp)
+                {
+                    textBox17.Text = (countp++).ToString();
+                }
+                if (p == charToCountP)
+                {
+                    textBox17.Text = (countp++).ToString();
+
+                }
+            }
+
+            char charToCountq = 'q';
+            char charToCountQ = 'Q';
+            foreach (char q in textBox1.Text)
+            {
+                if (q == charToCountq)
+                {
+                    textBox18.Text = (countq++).ToString();
+                }
+                if (q == charToCountQ)
+                {
+                    textBox18.Text = (countq++).ToString();
+
+                }
+            }
+
+            char charToCountr = 'r';
+            char charToCountR = 'R';
+            foreach (char r in textBox1.Text)
+            {
+                if (r == charToCountr)
+                {
+                    textBox19.Text = (countr++).ToString();
+                }
+                if (r == charToCountR)
+                {
+                    textBox19.Text = (countr++).ToString();
+
+                }
+            }
+
+            char charToCounts = 's';
+            char charToCountS = 'S';
+            foreach (char s in textBox1.Text)
+            {
+                if (s == charToCounts)
+                {
+                    textBox20.Text = (counts++).ToString();
+                }
+                if (s == charToCountS)
+                {
+                    textBox20.Text = (counts++).ToString();
+
+                }
+            }
+
+            char charToCountt = 't';
+            char charToCountT = 'T';
+            foreach (char t in textBox1.Text)
+            {
+                if (t == charToCountt)
+                {
+                    textBox21.Text = (countt++).ToString();
+                }
+                if (t == charToCountT)
+                {
+                    textBox21.Text = (countt++).ToString();
+
+                }
+            }
+
+            char charToCountu = 'u';
+            char charToCountU = 'U';
+            foreach (char u in textBox1.Text)
+            {
+                if (u == charToCountu)
+                {
+                    textBox22.Text = (countu++).ToString();
+                }
+                if (u == charToCountU)
+                {
+                    textBox22.Text = (countu++).ToString();
+
+                }
+            }
+
+            char charToCountv = 'v';
+            char charToCountV = 'V';
+            foreach (char v in textBox1.Text)
+            {
+                if (v == charToCountv)
+                {
+                    textBox23.Text = (countv++).ToString();
+                }
+                if (v == charToCountV)
+                {
+                    textBox23.Text = (countv++).ToString();
+
+                }
+            }
+
+            char charToCountw = 'w';
+            char charToCountW = 'W';
+            foreach (char w in textBox1.Text)
+            {
+                if (w == charToCountw)
+                {
+                    textBox24.Text = (countw++).ToString();
+                }
+                if (w == charToCountW)
+                {
+                    textBox24.Text = (countw++).ToString();
+
+                }
+            }
+
+            char charToCountx = 'x';
+            char charToCountX = 'X';
+            foreach (char x in textBox1.Text)
+            {
+                if (x == charToCountx)
+                {
+                    textBox25.Text = (countx++).ToString();
+                }
+                if (x == charToCountX)
+                {
+                    textBox25.Text = (countx++).ToString();
+
+                }
+            }
+
+            char charToCounty = 'y';
+            char charToCountY = 'Y';
+            foreach (char y in textBox1.Text)
+            {
+                if (y == charToCounty)
+                {
+                    textBox26.Text = (county++).ToString();
+                }
+                if (y == charToCountY)
+                {
+                    textBox26.Text = (county++).ToString();
+
+                }
+            }
+
+            char charToCountz = 'z';
+            char charToCountZ = 'Z';
+            foreach (char z in textBox1.Text)
+            {
+                if (z == charToCountz)
+                {
+                    textBox27.Text = (countz++).ToString();
+                }
+                if (z == charToCountZ)
+                {
+                    textBox27.Text = (countz++).ToString();
+
+                }
+            }
+
+
+
+
+
+
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox5.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox15.Clear();
+            textBox16.Clear();
+            textBox17.Clear();
+            textBox18.Clear();
+            textBox19.Clear();
+            textBox20.Clear();
+            textBox21.Clear();
+            textBox22.Clear();
+            textBox23.Clear();
+            textBox24.Clear();
+            textBox25.Clear();
+            textBox26.Clear();
+            textBox27.Clear();
+
+            counta = 1;
+            countb = 1;
+            countc = 1;
+            countd = 1;
+            counte = 1;
+            countf = 1;
+            countg = 1;
+            counth = 1;
+            counti = 1;
+            countj = 1;
+            countk = 1;
+            countl = 1;
+            countm = 1;
+            countn = 1;
+            counto = 1;
+            countp = 1;
+            countq = 1;
+            countr = 1;
+            counts = 1;
+            countt = 1;
+            countu = 1;
+            countv = 1;
+            countw = 1;
+            countx = 1;
+            county = 1;
+            countz = 1;
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
